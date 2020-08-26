@@ -29,7 +29,7 @@ function Navbar () {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRMK <i class='fa fa-compass'></i>
+            Uni Meets Uni <i style={{paddingLeft: "10px"}} class='fa fa-compass'></i>
           </Link>
 
           <div className='menu-icon' onClick={handleClick}>
@@ -58,7 +58,7 @@ function Navbar () {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Apps
               </Link>
             </li>
           </ul>

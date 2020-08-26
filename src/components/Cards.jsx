@@ -11,34 +11,34 @@ function Cards() {
          <ul className="cards__item">
           <CardItem 
             src="images/img-9.jpg"
-            text="Explore deep inside the Amazon jungle"
-            label='Adventure'
+            text="Travel with new friends"
+            label='Travel'
             path='/services'
           />
             <CardItem
               src="images/img-2.jpg"
-              text="Let's go to Bali!"
-              label='Adventure'
+              text="Boy friend or Girl friend"
+              label='Love'
               path='/services'
             />
-       
-         </ul>
+        </ul>
+        
           <ul className="cards__item">
             <CardItem
               src="images/img-5.jpg"
-              text="Explore deep inside the Amazon jungle"
-              label='Adventure'
+              text="Have fun with new friends"
+              label='Fun time'
               path='/services'
             />
             <CardItem
               src="images/img-6.jpg"
-              text="Let's go to Bali!"
-              label='Adventure'
+              text="Love is all around."
+              label='Romantic'
               path='/services'
             />
             <CardItem
               src="images/img-7.jpg"
-              text="Let's go to Bali!"
+              text="Socializing is an adventure."
               label='Adventure'
               path='/services'
             />

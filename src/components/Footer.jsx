@@ -8,10 +8,10 @@ function Footer() {
     <div className='footer-container'>
       <section className="fotter-subscription">
         <p className="footer-subscription-heading">
-          Join the Adventure newsletter to receive our best vacation deals
+          Don't get bored.
         </p>
         <p className="footer-subscription-text">
-          You can unsubscribe at any time.
+          You can unsubscribe and uninstall at any time.
         </p>
         <div className="input-area">
           <form>
@@ -60,10 +60,10 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to='/' className="social-logo">
-              TRMK <i className="fa fa-compass"></i>
+              Uni Meets Uni <i className="fa fa-compass" style={ { paddingLeft: "15px" } }></i>
             </Link>
           </div>
-          <small className="website-rights">TRMK @ 2020</small>
+          {/*<small className="website-rights">UmU @ 2020</small>*/}
           <div className="social-icons">
             <Link className="social-icon-link facebook"
               to='/'

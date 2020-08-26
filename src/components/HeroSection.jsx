@@ -6,9 +6,9 @@ import './HeroSection.css'
 function HeroSection () {
   return (
     <div className='hero-container'>
-      {/*<video src='/videos/video-2.mp4' autoPlay loop muted /> */}
+      <video src='/videos/video-3.mp4' autoPlay loop muted /> 
       <h1>Making New Connections</h1>
-      <p>What are you doing for?</p>
+      <p>Do you want to make new friends?</p>
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -22,7 +22,7 @@ function HeroSection () {
           buttonStyle='btn--primary'
           buttonSize='btn--large'
         >
-          Watch Trailer <i className='fa fa-play-circle' />
+          How to use the app <i className='fa fa-play-circle' />
         </Button>
       </div>
     </div>
