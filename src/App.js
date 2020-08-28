@@ -5,7 +5,7 @@ import './App.css'
 import Home from './components/pages/Home.jsx'
 import Services from './components/pages/Services.jsx'
 import Products from './components/pages/Products.jsx'
-import SignUp from './components/pages/SignUp.jsx'
+import SignUp from './components/SignInUp.jsx'
 
 function App () {
   return (
