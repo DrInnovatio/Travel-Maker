@@ -1,59 +1,56 @@
-import React from 'react'
-import '../../App.css'
+import React from "react";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 
-export default function SignUp() {
+
+
+  const signUpform = {
+    marginLeft: '30%', 
+    marginTop: '5%', 
+    width: '500px',
+  }
+
+const SignUp = () => {
   return (
-    <>
-    <form>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4"/>
-        </div>
-
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4"/>
-          </div>
-      </div>
-
-        <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"/>
-        </div>
-            <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+    <MDBContainer >
+      <MDBRow style={ signUpform } >
+        <MDBCol  md="12">
+          <form>
+            <p className="h4 text-center mb-4">Sign up</p>
+            <label htmlFor="defaultFormRegisterNameEx" className="grey-text">
+              Your name
+        </label>
+            <input type="text" id="defaultFormRegisterNameEx" className="form-control" />
+            <br />
+            <label htmlFor="defaultFormRegisterEmailEx" className="grey-text">
+              Your email
+        </label>
+            <input type="email" id="defaultFormRegisterEmailEx" className="form-control" />
+            <br />
+            <label htmlFor="defaultFormRegisterConfirmEx" className="grey-text">
+              Confirm your email
+        </label>
+            <input type="email" id="defaultFormRegisterConfirmEx" className="form-control" />
+            <br />
+            <label htmlFor="defaultFormRegisterPasswordEx" className="grey-text">
+              Your password
+        </label>
+            <input type="password" id="defaultFormRegisterPasswordEx" className="form-control" />
+            <div className="text-center mt-4">
+              <MDBBtn color="unique" type="submit">
+                Register
+                
+          </MDBBtn>
             </div>
+          </form>
+          <p>Sorry. This is a Beta version.</p>
+        </MDBCol>
+        
+      </MDBRow>
+    </MDBContainer>
+  );
+};
 
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity">City</label>
-                  <input type="text" class="form-control" id="inputCity"/>
-               </div>
-
-              <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control"/>
-                      <option selected>Choose...</option>
-                      <option>...</option>
-
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip"/>
-    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck"/>
-                        <label class="form-check-label" for="gridCheck">
-                          Check me out
-      </label>
-    </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
-</>
-  )
-}
+export default SignUp;
